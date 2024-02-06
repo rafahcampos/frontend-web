@@ -20,3 +20,14 @@ git config --global user.email "rafael.campos.m@hotmail.com"
 git config --list
 ```
 
+```
+#Comandos para comitar
+git status
+git add .
+git commit -m "mensagem"
+```
+
+```
+#Publicar todos os commits (mandar para o repositório remoto)
+git push
+```
