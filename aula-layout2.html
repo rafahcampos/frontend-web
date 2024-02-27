@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <title>Layout 2</title>
-    <style>
+    <head>
+        <title>Layout 2</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         #container {
             display: flex;
         }
@@ -23,6 +27,7 @@
             margin: 20px 0 0 0;
             height: 50px;
             width: 150px;
+            border-radius: 10px;
         }
 
         #logoDown {
@@ -30,12 +35,23 @@
             margin: 0 0 20px 0;
             height: 50px;
             width: 150px;
+            border-radius: 10px;
         }
 
+        #rightMainContent{
+            display: flex;
+            flex-direction: column;
+            height: 1000px;
+            width: 80%;
+       
+        }
         #main {
             display: flex;
             width: 100%;
-            height: 100%;
+            height: 1000px;
+            flex-direction: column;
+            background: red;
+            
         }
 
         #upperBar {
@@ -43,44 +59,92 @@
             width: 100%;
             height: 100px;
             display: flex;
-            align-items: center;
-            justify-content: end;
+            align-items:center;
+            justify-content:end;
         }
         #leftMainElement{
             background: #F6F193;
-            height: 40px;
-            width: 100px;
+            height: 50px;
+            width: 50px;
+            margin: 0 10px 0 0;
+            border-radius: 30px;
            
 
+        }
+        #rightMainElement{
+            background: #F6F193;
+            height: 40px;
+            width: 100px;
+            margin: 0 40px 0 0;
+            border-radius: 10px;
+        }
+        #mainMiddle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           ;
+        }
+        #mainMiddleUpperElement{
+            background:#F6F193;
+            height: 100px;
+            width: 40%;
+            border-radius: 20px;
+            margin: 60px 600px 0 0px;
+
+        }
+        #mainMiddleDownElement{
+            background:#F6F193;
+            height: 400px;
+            width: 80% ;
+            border-radius: 20px;
+            margin: 60px 200px 0 40px;
+        }
+        #downBar{
+            background: red;
+
+        }
+        #footer{
+            background: #F2C18D;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items:center;
+            justify-content:end;
         }
 
        
     </style>
 
-</head>
+    </head>
 
-<body>
-    <div id="container">
-        <div id="sidebar">
-            <div id="logoUpper"></div>
-            <div id="logoDown"></div>
-        </div>
-        <div id="header">
-            <div id="leftHeaderBt"></div>
-            <div id="rightHeaderBt"></div>
-        </div>
-        <div id="main">
-            <div id="upperBar">
-                <div id="leftMainElement"></div>
-                <div id="rightMainElement"></div>
+    <body>
+        <div id="container">
+            <div id="sidebar">
+                <div id="logoUpper"></div>
+                <div id="logoDown"></div>
             </div>
-            <div id="downBar">
-                <div id="footer"></div>
+            <div id="rightMainContent">
+                <div id="header">
+                    <div id="leftHeaderBt"></div>
+                    <div id="rightHeaderBt"></div>
+                </div>
+                <div id="main">
+                    <div id="upperBar">
+                        <div id="leftMainElement"></div>
+                        <div id="rightMainElement"></div>
+                    </div>
+                    <div id="mainMiddle">
+                        <div id="mainMiddleUpperElement"></div>
+                        <div id="mainMiddleDownElement"></div>
+
+                    </div>
+                </div>
+                <div id="downBar">
+                    <div id="footer"></div>
+                </div>
+
             </div>
         </div>
-
-    </div>
-</body>
-
+    </body>
 
 </html>
