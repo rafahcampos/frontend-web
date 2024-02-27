@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Layout 1</title>
+    <style>
+        #header {
+            background: #454345;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        #logo {
+            width: 100px;
+            height: 70px;
+            background: #834344;
+        }
+
+        #nav {
+            width: 400px;
+            height: 70px;
+            background: #948785;
+
+        }
+
+        #main {
+            background: #154345;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        #sidebar {
+            width: 250px;
+            height: 500px;
+            margin: 0 10px 0 0;
+            background: #c7bb0d;
+        }
+
+        #content {
+            width: 550px;
+            height: 500px;
+            background: #f5063a;
+        }
+
+        #footer {
+            height: 400px;
+            background: #06ff3c;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        #txt-footer {
+            width: 450px;
+            height: 200px;
+            margin: 0 10px 0 0;
+            background: #f7bb0d;
+        }
+
+        #logo-footer {
+            width: 100px;
+            height: 70px;
+            background: #f5063a
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <div id="nav"></div>
+    </div>
+    <div id="main">
+        <div id="sidebar"></div>
+        <div id="content"></div>
+    </div>
+    <div id="footer">
+        <div id="txt-footer"></div>
+        <div id="logo-footer"></div>
+    </div>
+</body>
+
+</html>

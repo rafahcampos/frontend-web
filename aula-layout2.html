@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Layout 2</title>
+    <style>
+        #container {
+            display: flex;
+        }
+
+        #sidebar {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            background: #A5DD9B;
+            height: 1000px;
+            width: 25%;
+        }
+
+        #logoUpper {
+            background: #F6F193;
+            margin: 20px 0 0 0;
+            height: 50px;
+            width: 150px;
+        }
+
+        #logoDown {
+            background: #F6F193;
+            margin: 0 0 20px 0;
+            height: 50px;
+            width: 150px;
+        }
+
+        #main {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #upperBar {
+            background: #F2C18D;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        #leftMainElement{
+            background: #F6F193;
+            height: 40px;
+            width: 100px;
+           
+
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <div id="logoUpper"></div>
+            <div id="logoDown"></div>
+        </div>
+        <div id="header">
+            <div id="leftHeaderBt"></div>
+            <div id="rightHeaderBt"></div>
+        </div>
+        <div id="main">
+            <div id="upperBar">
+                <div id="leftMainElement"></div>
+                <div id="rightMainElement"></div>
+            </div>
+            <div id="downBar">
+                <div id="footer"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+</html>
